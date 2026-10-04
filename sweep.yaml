@@ -1,4 +1,10 @@
 method: grid
+command:
+  - ${env}
+  - python
+  - ${program}
+  - ${args}
+program: cifar_vit.py
 parameters:
   embed_dim:
     values: [64, 128, 256]
